@@ -1,0 +1,11 @@
+{% load static %}
+
+<div class="col-lg-4 col-sm-6 col-xs-12"><div class="single_course">
+<div class="single_c_img">
+<img src="{{ prog.proimage.url }}" class="img-fluid" alt="course-image"><span>{{ prog.protitle }}</span>
+</div>
+<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><h4><a href="{% url 'details:detail' prog.slug %}">{{ prog.proshortdescription}}</a></h4>
+<p><span class="ti-book"></span>12 دوره</p>
+<p><span class="ti-alarm-clock"></span>{{ prog.protime }}</p>
+<div class="price">هزینه دوره {{ prog.proprice }}</div>
+</div></div>

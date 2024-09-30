@@ -1,0 +1,192 @@
+{% extends 'base2.html' %}
+{% load static %}
+<!DOCTYPE html>
+    {% block page_title %}
+        جزئیات دوره
+    {%  endblock page_title %}
+{% block page_titr1 %}
+    جزئیات دوره
+{% endblock page_titr1 %}
+{% block page_titr2 %}
+جزئیات دوره {{ program.protitle }}
+
+{% endblock page_titr2 %}
+{% block page_content %}
+
+<section class="our_event section-padding"><div class="container"><div class="row">
+<div class="col-lg-8 col-sm-8 col-xs-12">
+<div class="single_event_single">
+<img alt="" class="img-fluid" src="{{ program_detail.detail_image.url }}"><div class="single_event_text_single">
+<h4> {{ program.protitle }} </h4>
+<span><i class="fa fa-calendar"></i>{{ program_detail.date }}</span><span><i class="fa fa-clock-o"></i>{{ program_detail.days }}  روز   </span><span><i class="fa fa-table"></i><strong>{{ program_detail.desk }} صندلی موجود</strong></span><p> {{ program_detail.description }}</p>
+<p></p>
+</div>
+</div>
+<div class="course-details-content section-bg">
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item"><a href="#overview" class="nav-link active" data-bs-toggle="tab">بررسی اجمالی</a></li>
+<li><a href="#curriculum" class="nav-link" data-bs-toggle="tab">برنامه تحصیلی</a></li>
+<li class="nav-item"><a href="#instructor" class="nav-link" data-bs-toggle="tab">مربی</a></li>
+<li class="nav-item"><a href="#reviews" class="nav-link" data-bs-toggle="tab">بررسی ها</a></li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane show fade active" id="overview"><div class="overview">
+<p>لورم ایوم متن ساختگی با تولید آسان نامفهوم از صنعت چاپ با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و در ستون و سطرآنان است که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای بسیاری در شصت و سه درصد گذشته، حال و آینده شناخت جامعه و متخصصان را می طلبد تا با نرم افزارها بیشتر را برای طراحان رایانه ای علی الخصوص طراحان خلاق و فرهنگ پیشرو در زبان بشناسد.</p>
+<p>لورم ایوم متن ساختگی با تولید آسان نامفهوم از صنعت چاپ با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و در ستون و سطرآنان است که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت</p>
+<div class="details-buttons-area">
+<a href="#0" class="custom-button theme-one">اکنون ثبت نام کنید<i class="fa fa-angle-right"></i></a><a href="#0" class="custom-button bg-white">عضویت دریافت کنید</a><ul class="social-icons">
+<li><a href="#0" class="active"><i class="fa fa-facebook"></i></a></li>
+<li><a href="#0"><i class="fa fa-twitter"></i></a></li>
+<li><a href="#0"><i class="fa fa-instagram"></i></a></li>
+</ul>
+</div>
+</div></div>
+<div class="tab-pane fade" role="tabpanel" id="curriculum"><div class="overview">
+<p>لورم ایوم متن ساختگی با تولید آسان نامفهوم از صنعت چاپ با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و در ستون و سطرآنان است که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای بسیاری در شصت و سه درصد گذشته، حال و آینده شناخت جامعه و متخصصان را می طلبد تا با نرم افزارها بیشتر را برای طراحان رایانه ای علی الخصوص طراحان خلاق و فرهنگ پیشرو در زبان بشناسد.</p>
+<p>لورم ایوم متن ساختگی با تولید آسان نامفهوم از صنعت چاپ با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و در ستون و سطرآنان است که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای بسیاری در شصت و سه درصد گذشته، حال و آینده شناخت جامعه و متخصصان را می طلبد تا با نرم افزارها بیشتر را برای طراحان رایانه ای علی الخصوص طراحان خلاق و فرهنگ پیشرو در زبان بشناسد.</p>
+<p>لورم ایوم متن ساختگی با تولید آسان نامفهوم از صنعت چاپ با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و در ستون و سطرآنان است که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت</p>
+<div class="details-buttons-area">
+<a href="#0" class="custom-button theme-one">اکنون ثبت نام کنید<i class="fa fa-angle-right"></i></a><a href="#0" class="custom-button bg-white">عضویت دریافت کنید</a><ul class="social-icons">
+<li><a href="#0"><i class="fa fa-facebook"></i></a></li>
+<li><a href="#0"><i class="fa fa-twitter"></i></a></li>
+<li><a href="#0"><i class="fa fa-instagram"></i></a></li>
+</ul>
+</div>
+</div></div>
+<div class="tab-pane fade" id="instructor"><div class="overview text-center">
+<div class="instructor-item">
+<div class="instructor-thumb"><a href="#0"><img src="assets/img/ins-details.png" alt="instructor"></a></div>
+<div class="instructor-content">
+<h6 class="title"><a href="#0">مانوئل نویر</a></h6>
+<span class="details">معلم</span>
+</div>
+</div>
+<p>لورم ایوم متن ساختگی با تولید آسان نامفهوم از صنعت چاپ با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و در ستون و سطرآنان است که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و س</p>
+<div class="details-buttons-area"><ul class="social-icons justify-content-center w-100">
+<li><a href="#0"><i class="fa fa-facebook"></i></a></li>
+<li><a href="#0" class="active"><i class="fa fa-twitter"></i></a></li>
+<li><a href="#0"><i class="fa fa-instagram"></i></a></li>
+</ul></div>
+</div></div>
+<div class="tab-pane fade" id="reviews"><div class="client-review">
+<div class="review-comments">
+<h6 class="review-title">نظرات (03)</h6>
+<ul class="review-contents">
+<li>
+<div class="thumb"><img src="assets/img/client04.png" alt="course"></div>
+<div class="cont">
+<h6 class="subtitle">ربات اسمیت</h6>
+<div class="ratings cl-theme">
+<span><i class="fa fa-star"></i></span><span><i class="fa fa-star"></i></span><span><i class="fa fa-star"></i></span><span><i class="fa fa-star"></i></span><span><i class="fa fa-star"></i></span>
+</div>
+<p>لورم ایوم متن ساختگی با تولید آسان نامفهوم از صنعت چاپ با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و</p>
+</div>
+</li>
+<li>
+<div class="thumb"><img src="assets/img/client02.png" alt="course"></div>
+<div class="cont">
+<h6 class="subtitle">نیکلاس آنلکا</h6>
+<div class="ratings cl-theme">
+<span><i class="fa fa-star"></i></span><span><i class="fa fa-star"></i></span><span><i class="fa fa-star"></i></span><span><i class="fa fa-star"></i></span><span class="cl-theme-light"><i class="fa fa-star"></i></span>
+</div>
+<p>لورم ایوم متن ساختگی با تولید آسان نامفهوم از صنعت چاپ با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و</p>
+</div>
+</li>
+<li>
+<div class="thumb"><img src="assets/img/client03.png" alt="course"></div>
+<div class="cont">
+<h6 class="subtitle">هری جانشون</h6>
+<div class="ratings cl-theme">
+<span><i class="fa fa-star"></i></span><span><i class="fa fa-star"></i></span><span><i class="fa fa-star"></i></span><span><i class="fa fa-star"></i></span><span><i class="fa fa-star"></i></span>
+</div>
+<p>لورم ایوم متن ساختگی با تولید آسان نامفهوم از صنعت چاپ با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="review-form">
+<h6 class="review-title">یک بررسی اضافه کنید</h6>
+<form class="row client-form align-items-center">
+<div class="col-md-4 col-12"><input type="text" name="name" placeholder="نام و نام خانوادگی"></div>
+<div class="col-md-4 col-12"><input type="text" name="email" placeholder="آدرس پست الکترونیکی"></div>
+<div class="col-md-4 col-12"><div class="rating">
+<span class="rating-title">امتیاز شما :</span><ul class="ratings">
+<li><a href="#0" title="Give Me One Star"><i class="fa fa-star"></i></a></li>
+<li><a href="#0" title="Give Me Two Star"><i class="fa fa-star"></i></a></li>
+<li><a href="#0" title="Give Me Three Star"><i class="fa fa-star"></i></a></li>
+<li><a href="#0" title="Give Me Four Star"><i class="fa fa-star"></i></a></li>
+<li><a href="#0" title="Give Me Five Star"><i class="fa fa-star"></i></a></li>
+</ul>
+</div></div>
+<div class="col-md-12 col-12 d-inline-flex"><textarea rows="5" placeholder="اینجا پیام را تایپ کنید"></textarea></div>
+<div class="col-12"><button type="submit" class="custom-button rounded">ارسال بررسی</button></div>
+</form>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-sm-4 col-xs-12">
+<div class="course_features">
+<h3>ویژگی های دوره</h3>
+<ul>
+<li>
+<i class="fa fa-calendar"></i>طول دوره<b>{{ program_detail.days }} روز </b>
+</li>
+<li>
+<i class="fa fa-user"></i>کل سخنرانی ها<b>{{ program_detail.total_speak }} ساعت </b>
+</li>
+<li>
+<i class="fa fa-user"></i>کل دانش آموزان<b>{{ program_detail.total_std }}</b>
+</li>
+<li>
+<i class="fa fa-trophy"></i>گواهینامه<b>{{ program_detail.certificate }}</b>
+</li>
+</ul>
+</div>
+<div class="event_info_price"><h4>قیمت - {{ program_detail.price }} تومان</h4></div>
+<div class="event_info_register"><a class="btn_one" href="#">امروز ثبت نام کنید</a></div>
+<div class="related_course">
+<h3>دوره مرتبط</h3>
+<div class="single_rc">
+<div class="rc_img"><img src="assets/img/rc-1.png" alt=""></div>
+<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><h4><a href="#">طراحی UI/UX و ...</a></h4>
+<span>$42.00</span>
+</div>
+<div class="single_rc">
+<div class="rc_img"><img src="assets/img/rc-2.png" alt=""></div>
+<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><h4><a href="#">بزرگترین علاقه در ...</a></h4>
+<span>$37.00</span>
+</div>
+<div class="single_rc">
+<div class="rc_img"><img src="assets/img/rc-3.png" alt=""></div>
+<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><h4><a href="#">هنر خود را به کار ببرید...</a></h4>
+<span>$21.00</span>
+</div>
+</div>
+<div class="sidebar-post">
+<div class="sidebar_title"><h4>دسته بندی ها</h4></div>
+<div class="single_category"><ul>
+<li><a href="#">تحصیلات<sup>11</sup></a></li>
+<li><a href="#">محتوای هوش مصنوعی<sup>44</sup></a></li>
+<li><a href="#">دوره جدید<sup>33</sup></a></li>
+<li><a href="#">بازار یابی<sup>14</sup></a></li>
+<li><a href="#">نرم افزار<sup>21</sup></a></li>
+<li><a href="#">طرح<sup>01</sup></a></li>
+</ul></div>
+</div>
+<div class="sidebar-post">
+<div class="sidebar_title"><h4>ما را دنبال کنید</h4></div>
+<div class="single_social"><ul>
+<li><div class="social_item b_facebook"><a href="#" title="facebook"><i class="fa fa-facebook"></i><span class="item-list">150 هزار لایک</span></a></div></li>
+<li><div class="social_item b_twitter"><a href="#" title="twitter"><i class="fa fa-twitter"></i><span class="item-list">138 هزار دنبال کننده</span></a></div></li>
+<li><div class="social_item b_youtube"><a href="#" title="youtube"><i class="fa fa-youtube"></i><span class="item-list">90 هزار مشترک</span></a></div></li>
+<li><div class="social_item b_pinterest"><a href="#" title="pinterest"><i class="fa fa-pinterest"></i><span class="item-list">350 هزار دنبال کننده</span></a></div></li>
+<li><div class="social_item b_tumblr"><a href="#" title="rss"><i class="fa fa-tumblr"></i><span class="item-list">901 فالوور</span></a></div></li>
+<li><div class="social_item b_rss"><a href="#" title="rss"><i class="fa fa-rss"></i><span class="item-list">411 فالوور</span></a></div></li>
+</ul></div>
+</div>
+</div>
+</div></div></section><div class="footer section-padding"><div class="container"><div class="row">
+
+{% endblock page_content %}

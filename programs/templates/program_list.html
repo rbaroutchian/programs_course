@@ -1,0 +1,24 @@
+{% extends 'base2.html' %}
+{% load static %}
+<!DOCTYPE html>
+
+
+{% block page_titr1 %}
+        تمامی دوره ها
+{% endblock page_titr1 %}
+{% block page_titr2 %}
+همه دوره ها
+{% endblock page_titr2 %}
+
+{% block page_content %}
+
+<section class="home_course section-padding"><div class="container"><div class="row">
+{% for prog in progs %}
+    {% include 'includes/program.html' %}
+{% endfor %}
+
+
+</div></div></section>
+
+{% endblock page_content %}
+
